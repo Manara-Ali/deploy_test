@@ -10,7 +10,7 @@ const DB = mongoose.connect(process.env.DATABASE.replace("<PASSWORD>", process.e
     console.log(`CONNECTED TO ${con.connection.name} DATABASE...`);
 });
 
-const PORT = 10000;
+const PORT = process.env.PORT || 10000;
 
 app.listen(PORT, () => {
   console.log(`SERVER STARTED ON PORT ${PORT}...`);
