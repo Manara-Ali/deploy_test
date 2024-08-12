@@ -8,7 +8,7 @@ export const App = () => {
     const helperFn = async () => {
       try {
         const response = await axios({
-          url: "https://deploy-test-np6k.onrender.com/api/v1/products",
+          url: "https://deploy-test-fbxi.onrender.com/api/v1/products",
           method: "GET",
         });
 
